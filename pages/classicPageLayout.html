@@ -19,7 +19,8 @@
 			background-color: #98D1C7;
 		}
 		#aside, #article{
-			margin: 1em ;
+			float: left;
+			margin: 1rem ;
 		}
 		#aside{
 			width: 30%;
@@ -28,12 +29,8 @@
 		}
 		#article{
 			background-color: #FA7A7B;
-			display: inline-block;
-			position: absolute;
-			left: 35%;
-			top: 13vh;
 			height:70vh ;
-			width: 60%;
+			width: 62%;
 		}
 		.img{
 			background-color: #D6D5D5;
@@ -48,6 +45,10 @@
 			width: 10em;
 			height: 10em;
 		}
+		.clearfix{
+			clear: both;
+		}
+
 	</style>
 </head>
 <body>
@@ -58,6 +59,7 @@
 		<div class="img">Image</div>
 		<div class="img">Image</div>
 	</div>
+	<div class="clearfix"></div>
 	<div id="footer">Footer</div>
 </body>
 </html>

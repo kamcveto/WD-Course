@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OlimpicRings</title>
+    <style>
+        body{
+            background-image: url(../images/OlimpicRings/ocean-through-window-frame.jpg);
+            background-size: cover;
+            margin: 0px auto;
+        }
+        div{
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        .main{
+            position: absolute;
+            width: 555px;
+            height: 300px;
+            margin: 0px auto;
+            top: 35%;
+            left: 35%;
+        }
+        .ring{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            text-align: center;
+            vertical-align: middle;
+            opacity: 0.5;
+            line-height: 4em;
+        }
+        .Europe{
+            border: 15px solid blue;
+        }
+        .Africa{
+            border: 15px solid yellow;
+        }
+        .America{
+            border: 15px solid black;
+        }
+        .Asia{
+            border: 15px solid green;
+            left: 90px;
+            bottom: 70px;
+        }
+        .Australia{
+            border: 15px solid red;
+            left: 90px;
+            bottom: 70px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <section>
+            <div class="Europe ring" id="pos1">Europe</div>
+            <div class="Africa ring" id="pos2">Africa</div>
+            <div class="America ring" id="pos3">America</div>
+        </section>
+        <section>
+            <div class="Asia ring" id="pos4">Asia</div>
+            <div class="Australia ring" id="pos5">Australia</div>
+        </section>
+    </div>
+</body>
+</html>

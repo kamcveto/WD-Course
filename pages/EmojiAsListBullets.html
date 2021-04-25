@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmojiAsListBullets</title>
+    <style>
+        h1{
+            font-size: 4em;
+            font-weight: bold;
+            text-align: center;
+        }
+        .todoList{
+            position: relative;
+            margin: 0px auto;
+            width: 500px;
+            font-size: 1.5em;
+            border-top: 10px solid darkgrey;
+            border-left: 10px solid darkgrey;
+            border-right: 10px solid gray;
+            border-bottom: 10px solid grey;
+        }
+        .emoji{
+            position: relative;
+            list-style: none;
+            overflow: hidden;
+        }
+        .emoji-smile:before{
+            content: "\1F603";
+        }
+        .emoji-sad::before{
+            content: "\1F625";
+        }
+        .emoji-loudly-crying:before{
+            content:"\1F62D" ;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Todo List</h1>
+    <ul class="todoList">
+        <li class="emoji emoji-smile">Learn HTML </li>
+        <li class="emoji emoji-sad">Learn CSS</li>
+        <li class="emoji emoji-loudly-crying">Learn JavaScript</li>
+    </ul>
+</body>
+</html>
