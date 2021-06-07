@@ -6,11 +6,11 @@ var foo = function() {
   var x = 2;
 
   let bar = function(x) {
-    console.log("x in bar = ", x) //2 console =99
+    console.log("x in bar = ", x) //99 console =99
   };
   bar(99);
 
-  console.log("x in foo = ", x);//99 console = 2
+  console.log("x in foo = ", x);//2 console = 2
 }
 
 foo();

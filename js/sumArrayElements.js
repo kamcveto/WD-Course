@@ -10,8 +10,8 @@ let numbers = [-2, 3, 7, 8, -1, 4, 2];
 // >>>>>>>>> write your code bellow:
 var sum = 0;
 var l=numbers.length;
-for(var i =0; i<l;i++){
-    if ( i % 2 === 0){
+for(var i=0; i<l;i++){
+    if (i % 2 === 0 ){
         sum += i;
     }
 }
