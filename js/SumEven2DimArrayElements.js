@@ -1,18 +1,15 @@
 // TASK: Да се дефинира функция SumEven2DimArrayElements(), която връща сумата от четните елементи на подаденият й двумерен масив.
 
 // ---> YOUR CODE HERE <---
-function SumEven2DimArrayElements(arr){
-  var sum = 0;
-  for ( i = 0; i < arr.length; i++) {
-  var innerArrayLength = arr[i].length;
-  for ( j = 0; j < innerArrayLength; j++) {
-    if (arr[j] % 2 == 0)
-    sum =+j; 
+function SumEven2DimArrayElements(arr) {
+  var Summa =0
+  for (i = 0; i < arr.length; i++)
+    for(j = 0; j < arr[i].length; j++){
+       if (j % 2 === 0)
+         Summa =+ arr[i][j];
     }
-  }
-  return sum;
+  return Summa;
 }
-    
 // TEST:
 var arr = [
     [1,2,3],
